@@ -7,7 +7,7 @@ conjuga_ar = ['o','as','a','amos','ais','am'];
 conjuga_er = ['o','es','e','emos','eis','em'];
 conjuga_ir = ['o','es','e','imos','is','em'];
 verbo = raw_input("Digite o infinitivo de um verbo regular:") #verbo a se conjugado
-termina_em = verbo[:-2] #separa a terminacao do verbo
+termina_em = verbo[-2:] #separa a terminacao do verbo
 #conjuga o verbo apropriadamente de acordo com  a terminacao
 if termina_em == 'ar':
  for i in range(6): #repete seis vezes, percorrendo a lista
